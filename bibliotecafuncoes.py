@@ -1,4 +1,4 @@
-from bibliotecabanco import *
+from conexaobanco import *
 
 meucursor = banco.cursor()
 
