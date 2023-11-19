@@ -30,7 +30,7 @@ CREATE TABLE `alunos` (
   `email` varchar(256) DEFAULT NULL,
   `endereco` varchar(250) DEFAULT NULL,
   PRIMARY KEY (`matricula`)
-) ENGINE=InnoDB AUTO_INCREMENT=17 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=18 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -39,7 +39,7 @@ CREATE TABLE `alunos` (
 
 LOCK TABLES `alunos` WRITE;
 /*!40000 ALTER TABLE `alunos` DISABLE KEYS */;
-INSERT INTO `alunos` VALUES (1,'maria isabelle','11223344556',NULL,NULL,'san martin'),(2,'et bilu','11122233310',NULL,NULL,'san martin'),(3,'galinho chicken little','33399945578',NULL,NULL,'san martin'),(4,'merlin','88899977756',NULL,NULL,'san martin'),(5,'casmocaoca','77755511145','99888545',NULL,'san martin'),(6,'menino ney',NULL,'11111111',NULL,NULL),(15,'Ken','55565633312','88443697','kendabarbie@gmail.com','Barbielandia'),(16,'Boo','55443365987','23651596','boooo','monstrópolis');
+INSERT INTO `alunos` VALUES (1,'maria isabelle','11223344556',NULL,NULL,'san martin'),(2,'et bilu','11122233310',NULL,NULL,'san martin'),(3,'galinho chicken little','33399945578',NULL,NULL,'san martin'),(5,'casmocaoca','77755511145','99888545',NULL,'san martin'),(6,'menino ney',NULL,'11111111',NULL,NULL),(15,'Ken','55565633312','88443697','kendabarbie@gmail.com','Barbielandia'),(16,'Boo','55443365987','23651596','boooo','monstrópolis'),(17,'Peppa Pig','55663311548','97823641','peppapig@gmail.com','mosntrópolis');
 /*!40000 ALTER TABLE `alunos` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -58,7 +58,7 @@ CREATE TABLE `func` (
   `salario` decimal(8,2) DEFAULT NULL,
   `filhos_fun` int NOT NULL,
   PRIMARY KEY (`id_funcionario`)
-) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=12 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -67,7 +67,7 @@ CREATE TABLE `func` (
 
 LOCK TABLES `func` WRITE;
 /*!40000 ALTER TABLE `func` DISABLE KEYS */;
-INSERT INTO `func` VALUES (1,'joão victor','77884422336',1,5250.42,0),(2,'Poliana Brandão','22115544995',5,5250.42,0),(3,'Luanna','11223300559',2,5200.00,0),(4,'danilo','55448899331',1,5200.00,0),(5,'thiago vinicius','88554422331',1,5500.00,0),(6,'marcelo','99442200664',1,5636.04,0),(7,'victor','55336644002',2,5635.92,0),(8,'Ian Victor','55443366112',2,6000.30,0),(10,'felipe miguel','66445588113',1,6000.00,0);
+INSERT INTO `func` VALUES (1,'joão victor','77884422336',1,5250.42,0),(2,'Poliana Brandão','22115544995',5,5250.42,0),(3,'Luanna','11223300559',2,5200.00,0),(4,'danilo','55448899331',1,5200.00,0),(6,'marcelo','99442200664',1,5636.04,0),(7,'victor','55336644002',2,5635.92,0),(8,'Ian Victor','55443366112',2,6000.30,0),(10,'felipe miguel','66445588113',1,6000.00,0),(11,'Iasmin','22336610248',1,5600.00,0);
 /*!40000 ALTER TABLE `func` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -79,10 +79,10 @@ DROP TABLE IF EXISTS `modalidades`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `modalidades` (
-  `id_mod` int NOT NULL AUTO_INCREMENT,
-  `nome` varchar(250) NOT NULL,
-  PRIMARY KEY (`id_mod`)
-) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+  `id_modalidade` int NOT NULL AUTO_INCREMENT,
+  `nome` varchar(50) NOT NULL,
+  PRIMARY KEY (`id_modalidade`)
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -91,7 +91,7 @@ CREATE TABLE `modalidades` (
 
 LOCK TABLES `modalidades` WRITE;
 /*!40000 ALTER TABLE `modalidades` DISABLE KEYS */;
-INSERT INTO `modalidades` VALUES (1,'musculação'),(2,'spinning'),(3,'zumba'),(4,'pilates'),(5,'natação');
+INSERT INTO `modalidades` VALUES (1,'natação'),(2,'boxe'),(3,'zumba'),(5,'Spinning'),(6,'Pilates');
 /*!40000 ALTER TABLE `modalidades` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -131,4 +131,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2023-11-16 17:29:19
+-- Dump completed on 2023-11-18 22:57:03
